@@ -1,0 +1,68 @@
+body {
+    width: 100%;
+    margin: 0;
+}
+
+#background {
+    width: 100%;
+    background-color: #eeeeee;
+}
+
+#nav-bar {
+    width: 80%;
+    box-shadow: -2px 0 7px #bbbbbb, 2px 0 7px #bbbbbb;
+    position: fixed;
+    top: 0;
+    left: 10%;
+    height: 60px;
+    background: linear-gradient(#ffffff, #efefef);
+    
+}
+
+#nav-bar table {
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+}
+
+#nav-bar td {
+    text-align: center;
+}
+
+#nav-bar td a:active {
+    background: linear-gradient(#f8f8f8, #efefef);
+}
+
+#nav-bar td a {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: #888888;
+}
+
+#big-picture {
+    width: auto;
+    margin: 60px auto 0 auto;
+}
+
+#content-strip {
+    width: 70%;
+    margin-right: 15%;
+    margin-left: 15%;
+    background: linear-gradient(to right, #ffffff, #eeeeee, #ffffff);
+    box-shadow: 10px 0 20px #bbbbbb, -10px 0 20px #bbbbbb;
+}
+
+.content {
+    min-height: 400px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.pane-break {
+	background: linear-gradient(to right, rgba(255,0,0,0), #777777, rgba(255,0,0,0));
+    height: 1px;
+    width: 60%;
+    margin: 15px 20% 15px 20%;
+    
+}
