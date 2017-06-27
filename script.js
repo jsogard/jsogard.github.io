@@ -23,11 +23,22 @@ function link(){
     });
 }
 
+function enable_slow_scroll(){
+    $("a[href^='#']").click(function(){
+        var aTag = $($(this).attr('href'));
+        $('html,body').animate({scrollTop: aTag.offset().top - 
+                                $('#nav-bar').height() - 15}, 'slow'); //make this dynamic to the .pane-break margin
+    });
+}
+
 $(document).ready(function(){
     resize();
     link();
+    enable_slow_scroll();
+    
 });
 
 $(window).resize(function(){
     resize();
 });
+
