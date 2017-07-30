@@ -16,6 +16,7 @@ body {
     left: 10%;
     height: 60px;
     background: linear-gradient(#ffffff, #efefef);
+    letter-spacing: 3px;
     
 }
 
@@ -27,6 +28,7 @@ body {
 
 #nav-bar td {
     text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #nav-bar td a:active {
@@ -38,6 +40,7 @@ body {
     height: 100%;
     text-decoration: none;
     color: #888888;
+    margin-top: 5px;
 }
 
 #big-picture {
@@ -53,6 +56,15 @@ body {
     box-shadow: 10px 0 20px #bbbbbb, -10px 0 20px #bbbbbb;
 }
 
+h2, h1, h3 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+}
+
 .content {
     min-height: 400px;
     margin-left: 15%;
@@ -65,4 +77,13 @@ body {
     width: 60%;
     margin: 15px 20% 15px 20%;
     
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact img {
+    width: 200px;
+    margin: 10px;
 }

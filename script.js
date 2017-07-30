@@ -1,16 +1,33 @@
-function resize(){
+function resize(all){
     var scr_ht = $(window).height();
     var scr_wd = $(window).width();
     
-    $("#big-picture").height(scr_ht - $("#nav-bar").height());
-    $("#big-picture").css("margin-left", 
-                          (scr_wd - $("#big-picture").width()) / 2 );
+    var $bigpic = $("#big-picture");
     
-    $("#content-strip").css("margin-top",
-                           -scr_ht);
-    $("#content-strip").css("padding-top",
-                           scr_ht);
+    $bigpic.width('auto');
+    $bigpic.height(scr_ht - $("#nav-bar").height());
     
+    if($bigpic.width() > $('#nav-bar').width()){
+        $bigpic.height('auto');
+        $bigpic.width($('#nav-bar').width());
+    }
+    
+    
+    $bigpic.css("margin-left", 
+                (scr_wd - $("#big-picture").width()) / 2 );
+    
+    var $strip = $("#content-strip");
+    
+    $strip.css("margin-top", -scr_ht);
+    $strip.css("padding-top", scr_ht);
+    if(!all) return;
+    
+    var bottom_buffer = scr_ht - $("#nav-bar").height()
+              - $(".pane-break").css("margin-bottom")
+              - $(".content:last").height()
+    
+    $strip.css("padding-bottom", 
+               bottom_buffer > 0 ? bottom_buffer : 0);
 }
 
 function link(){
@@ -18,7 +35,7 @@ function link(){
         var name = $(this).attr('id');
         $("#nav-bar table tr").append(
             "<td>\
-                    <a href=\"#" + name + "\">" + name + "</a>\
+                <a href=\"#" + name + "\">" + name + "</a>\
             </td>");
     });
 }
@@ -32,13 +49,13 @@ function enable_slow_scroll(){
 }
 
 $(document).ready(function(){
-    resize();
+    resize(true);
     link();
     enable_slow_scroll();
     
 });
 
 $(window).resize(function(){
-    resize();
+    resize(false);
 });
 
