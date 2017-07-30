@@ -7,9 +7,9 @@ function resize(all){
     $bigpic.width('auto');
     $bigpic.height(scr_ht - $("#nav-bar").height());
     
-    if($bigpic.width() > $('#nav-bar').width()){
+    if($bigpic.width() > $('#nav-bar').width() - 20){
         $bigpic.height('auto');
-        $bigpic.width($('#nav-bar').width());
+        $bigpic.width($('#nav-bar').width()-20);
     }
     
     
