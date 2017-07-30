@@ -28,6 +28,8 @@ function resize(all){
     
     $strip.css("padding-bottom", 
                bottom_buffer > 0 ? bottom_buffer : 0);
+    
+    //$("#experience .logo").attr("max-height", $("#experience .job-logo-div").height());
 }
 
 function link(){
