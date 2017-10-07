@@ -7,6 +7,11 @@
 </head>
 <body>
 <div id="background">
+    
+    <!-- 
+    ~~~~~ NAV BAR ~~~~~
+    besides the resume, tabs are auto-generated based off of the ids of the following .content portions
+    -->
     <div id="nav-bar">
         <table>
             <tr>
@@ -20,6 +25,16 @@
          id="big-picture"/>
     
 	<div id="content-strip">
+        
+        <!--
+        ~~~~~ CONTENT PANE TEMPLATE ~~~~~
+        <div class="content" id="TABNAME">
+            <h2>SECTION TITLE</h2>
+            CONTENT
+        </div>
+        <div class="pane-break"></div>
+        -->
+        
         <div class="pane-break"></div>
         <div class="content" id="about">
             <h2>joe sogard</h2>
@@ -28,10 +43,42 @@
             <p>Joe grew up in Edina, a suburb near Minneapolis, Minnesota. Growing up he joined the Boy Scouts of America, which established his love for camping and the outdoors. Ever since acheiving the rank of Eagle Scout he has gone on a week-long backpacking trip with his close friends on the north shore of Minnesota. In his free time he mainly enjoys hanging out with friends, running, knitting, and working on side programming projects.</p>
         </div>
         <div class="pane-break"></div>
-        <!--<div class="content" id="skills">
-            <h2>technical skills</h2>
+        
+        <div class="content" id="portfolio">
+            <!--
+            <div class="portfolio-project">
+                <a href="https://github.com/jsogard/xxxxxx">
+                    <h3>PROJECT TITLE</h3>
+                </a>
+                <p>PROJECT DESCRIPTION</p>
+            </div>
+            -->
+            <div class="portfolio-project">
+                <a href="https://github.com/jsogard/Whiteboard-With-Friends">
+                    <h3>Whiteboard With Friends</h3>
+                </a>
+                <p>This project started off as me and my roommate's final for our first ever web development class. We were initially tasked with creating a web-app that utilized AngularJS with a PHP backend and a school-provided SQL database. With these stipulations we came up with a social networking web-app in which any user can log on with a unique username and draw on a universal canvas that is updated in real time! The project was a resounding success and we submitted it for an A, but we wanted to keep making it better. We eventually turned it into a site where anybody can create their own whiteboards with special permissions on them for their friends.</p>
+                <p>This project is now dead because the servers with our data on them have since been wiped and given to another class, but I am now rebuilding it in a solo effort using 
+                    <a href="https://github.com/jsogard/whiteboard-with-friends-py">Python Flaskr</a>
+                .</p>
+            </div>
+            
+            <div class="portfolio-project">
+                <a href="https://github.com/jsogard/jsogard.github.io">
+                    <h3>Personal/Professional Website</h3>
+                </a>
+                <p>Before my last job application season while in college I figured I needed a website that was more professional and representative of my abilities than the one I made while first learning what HTML was. I spent the end of my final summer developing this website so I could show it off to any potential employers. Coincidentally, I took a portfolio development class the very next semester which required me to do exactly that!</p>
+            </div>
+            
+            <div class="portfolio-project">
+                <a href="https://github.com/jsogard/meal-price-tracker-app">
+                    <h3>Meal Management App</h3>
+                </a>
+                <p>During my Senior year of college I started my first ever mobile development class. At the same time I had my first semester at school where I had absolutely no meal plan. After a few poorly planned grocery trips I was inspired to make an app to track how much I was spending on my food and how much I was spending on each meal. I know there are so many apps out there that have already made this, but I saw this as a simple enough first app to develop that could help me in my daily life, so I took the challenge and went with it!</p>
+            </div>
         </div>
-        <div class="pane-break"></div>-->
+        <div class="pane-break"></div>
+        
         <div class="content" id="experience">
             <div class="job">
                 

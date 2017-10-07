@@ -118,3 +118,16 @@ p {
     width: 200px;
     margin: 10px;
 }
+
+#portfolio {
+	
+}
+
+#portfolio a{
+	text-decoration: none;
+    
+}
+
+#portfolio .portfolio-project > a{
+	color: inherit;
+}
