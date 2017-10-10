@@ -45,9 +45,24 @@ body {
     margin-top: 5px;
 }
 
-#big-picture {
-    width: auto;
+#collage {
+    width: 992px;
+	height: 480px;
+	position: relative;
+	border: solid 2.5px #666666;
     margin: 60px auto 0 auto;
+}
+
+.collage-pic{
+    background-color: #666666;
+    position: absolute;
+    border: solid 2.5px #666666;
+}
+
+.collage-pic > img{
+	background-color: #666666;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 #content-strip {
