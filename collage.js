@@ -105,7 +105,7 @@ $(document).ready(function(){
 	
 	// TODO personal differences:
 	var $collage = $("#collage");
-	var changeInterval_ms = 1000;
+	var changeInterval_ms = 10000;
 	var templates = [
 		new CollageTemplate($collage, function($collage){
 			/*
