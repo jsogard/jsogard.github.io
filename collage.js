@@ -28,7 +28,7 @@ class CollageTemplate{
 			this.paths[k] = [];
 			for(var i in CollageTemplate.pic_paths[k]){
 				var base_path = CollageTemplate.pic_paths[k][i];
-				this.paths[k].push("./collage/" + k + "/" + base_path);
+				this.paths[k].push("./img/collage/" + k + "/" + base_path);
 			}
 		}
 	}
