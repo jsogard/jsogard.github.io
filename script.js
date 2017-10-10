@@ -1,7 +1,7 @@
 function resize(all){
     var scr_ht = $(window).height();
     var scr_wd = $(window).width();
-    
+    /*
     var $bigpic = $("#big-picture");
     
     $bigpic.width('auto');
@@ -15,7 +15,7 @@ function resize(all){
     
     $bigpic.css("margin-left", 
                 (scr_wd - $("#big-picture").width()) / 2 );
-    
+    */
     var $strip = $("#content-strip");
     
     $strip.css("margin-top", -scr_ht);
