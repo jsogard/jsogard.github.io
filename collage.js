@@ -31,6 +31,7 @@ class CollageTemplate{
 				this.paths[k].push("./img/collage/" + k + "/" + base_path);
 			}
 		}
+		console.log(this.paths);
 	}
 	
 	get_pic_path(width, height){
@@ -104,6 +105,7 @@ class CollageTemplate{
 $(document).ready(function(){
 	
 	// TODO personal differences:
+//	return;
 	var $collage = $("#collage");
 	var changeInterval_ms = 10000;
 	var templates = [
@@ -213,14 +215,11 @@ $(document).ready(function(){
     CollageTemplate.Y1 = $collage.height() / 4;
 	
 	jQuery.ajax(
-		"./get_pic_paths.php",
+		"/pic_paths.json",
 		{
 			async: false,
-			data: {
-				"root": "./img/collage"
-			},
-			success: function(data, status, xhr){
-				CollageTemplate.pic_paths = $.parseJSON(data);
+			success: function(json, status, xhr){
+				CollageTemplate.pic_paths = json;
 			}
 		}
 	);

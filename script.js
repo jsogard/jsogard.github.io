@@ -1,25 +1,25 @@
 function resize(all){
     var scr_ht = $(window).height();
     var scr_wd = $(window).width();
-    /*
-    var $bigpic = $("#big-picture");
-    
-    $bigpic.width('auto');
-    $bigpic.height(scr_ht - $("#nav-bar").height());
-    
-    if($bigpic.width() > $('#nav-bar').width() - 20){
-        $bigpic.height('auto');
-        $bigpic.width($('#nav-bar').width()-20);
-    }
-    
-    
-    $bigpic.css("margin-left", 
-                (scr_wd - $("#big-picture").width()) / 2 );
-    */
+	
+	/* RESIZE COLLAGE */
+	$collage = $("#collage");
+	var collage_max_ht = scr_ht - $("#nav-bar").height() - $collage.outerHeight() + $collage.innerHeight();
+	var collage_max_wd = scr_wd * 0.9 - $collage.outerWidth() + $collage.innerWidth();
+	if(collage_max_wd / 2 > collage_max_ht){
+		collage_max_wd = collage_max_ht * 2;
+	}
+	else{
+		collage_max_ht = collage_max_wd / 2;
+	}
+	$("#collage").width(collage_max_wd);
+	$("#collage").height(collage_max_ht);
+	
+	
     var $strip = $("#content-strip");
     
-    $strip.css("margin-top", -scr_ht);
-    $strip.css("padding-top", scr_ht);
+    $strip.css("margin-top", 0);
+//    $strip.css("padding-top", scr_ht);
     if(!all) return;
     
     var bottom_buffer = scr_ht - $("#nav-bar").height()
@@ -59,5 +59,6 @@ $(document).ready(function(){
 
 $(window).resize(function(){
     resize(false);
+	
 });
 

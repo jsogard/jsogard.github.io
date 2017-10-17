@@ -1,15 +1,17 @@
 body {
     width: 100%;
     margin: 0;
+	background-color: #eeeeee;
 }
 
 #background {
     width: 100%;
-    background-color: #eeeeee;
+    background-color: auto;
     padding-bottom: 100px;
 }
 
 #nav-bar {
+	z-index: 100;
     width: 80%;
     box-shadow: -2px 0 7px #bbbbbb, 2px 0 7px #bbbbbb;
     position: fixed;
@@ -46,11 +48,10 @@ body {
 }
 
 #collage {
-    width: 992px;
-	height: 480px;
 	position: relative;
 	border: solid 2.5px #666666;
-    margin: 60px auto 0 auto;
+    margin: 60px auto -20px auto;
+	background-color: #666666;
 }
 
 .collage-pic{
@@ -67,8 +68,7 @@ body {
 
 #content-strip {
     width: 70%;
-    margin-right: 15%;
-    margin-left: 15%;
+	margin: 0 15% 0 15%;
     background: linear-gradient(to right, #ffffff, #eeeeee, #ffffff);
     box-shadow: 10px 0 20px #bbbbbb, -10px 0 20px #bbbbbb;
 }
