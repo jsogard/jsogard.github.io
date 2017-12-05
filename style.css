@@ -146,3 +146,27 @@ p {
 #portfolio .portfolio-project > a{
 	color: inherit;
 }
+
+#portfolio .portfolio-project > a *{
+	display: inline;
+	margin-right: 5px;
+}
+
+#portfolio .portfolio-project > a i{
+	color: #666666;
+}
+
+#test {
+	background-image: url('img/pfg_bw.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	opacity: 0.6;
+	height: 200px;	
+}
+
+.bgpic {
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	opacity: 0.6;
+}
