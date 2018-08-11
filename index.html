@@ -46,9 +46,14 @@
 		<!-- ABOUT ME -->
         <div class="content" id="about">
             <h2>joe sogard</h2>
-            <p>Joe is currently a student at Iowa State University anticipates <b>graduation in May 2018</b>. He is studying <b>Software Engineering</b> and has had <b>relevant internships</b> and other jobs since his Sophomore year. In school he participates in many clubs as the Treasurer of <b>Digital Women</b>, a head co-organizer of <b>HackISU</b> and Digital Women: Code Jam, and a participant of many other clubs at ISU.</p>
-            <p>After graduation Joe is looking for a full-time Software Engineering job in the Midwest, the Pacific NorthWest, or even Canada. Professionally, he is interested in a job that challenges him and grows his technical skillset. Specifically, he wants to work in <b>full-stack</b> or <b>back-end web development</b> or <b>application development</b> but he's open to nearly anything else in the software development field</p>
-            <p>Joe grew up in Edina, a suburb near Minneapolis, Minnesota. Growing up he joined the Boy Scouts of America, which established his love for camping and the outdoors. Ever since acheiving the rank of Eagle Scout he has gone on a week-long backpacking trip with his close friends on the north shore of Minnesota. In his free time he mainly enjoys hanging out with friends, running, knitting, and working on side programming projects.</p>
+			
+			<p>Hi, I’m Joe.</p>
+			
+			<p>I’m a recent graduate from Iowa State’s Software Engineering program always looking to sharpen my skills as a programmer. Currently I work at Innovative Software Engineering – a software contracting firm in Iowa – as a Software Engineer on a development team for the company’s largest product. My personal goal for the future is to move back to the Minneapolis area, where I'm originally from, and continue refining and growing my professional skills.</p>
+			
+			<p>In college I had many internships and jobs relating to my major and enjoyed participating in many of my school’s clubs too. Throughout my time in college I was a head organizer of <a href="https://hackisu.org/">HackISU</a> and Digital Women and a founder of <a href="http://digitalwomen.ece.iastate.edu/codecamp.html#codecamp">Digital Women: Code Camp</a> along with a competitor in many hackathons throughout the midwest.</p>
+			
+			<p>In my free time I like to meet new people, spend time outdoors, knit, and work on personal programming projects. I’m always looking for ways to improve my programming skills and I’m especially interested in backend and full-stack development, I’d love to get better at front-end UI/UX design, and I’m also a fan of mobile development.</p>
         </div>
         <div class="pane-break"></div>
         
@@ -62,18 +67,27 @@
                 <p>PROJECT DESCRIPTION</p>
             </div>
             -->
+			<div class="portfolio-project">
+                <a href="https://github.com/jsogard/rpi-music-frame">
+                    <h3>Raspberry Pi Music Video Frame</h3>
+					<i class="fa fa-code-fork" aria-hidden="true"></i>
+                </a>
+				<p>One of my favorite forms of art is music videos. When done right, the video and the song itself improve each other. That's why I started this project so I could watch them and show them to friends by simply plugging the Raspberry Pi in.</p>
+				<p>The final form of this project will be a monitor that I mount on a wall which plays all of my favorite music videos. The attached Raspberry Pi, in addition to playing and storing the videos, hosts a web-app from which I can control the videos being played and upload more that I find. After starting work on it using PHP and the linux command line, I've decided to no longer torture myself and now I use the python framework, Django.</p>
+            </div>
+			
             <div class="portfolio-project">
                 <a href="https://github.com/jsogard/Whiteboard-With-Friends">
                     <h3>Whiteboard With Friends</h3>
 					<i class="fa fa-code-fork" aria-hidden="true"></i>
                 </a>
-                <p>This project started off as me and my roommate's final for our first ever web development class. We were initially tasked with creating a web-app that utilized AngularJS with a PHP backend and a school-provided SQL database. With these stipulations we came up with a social networking web-app in which any user can log on with a unique username and draw on a universal canvas that is updated in real time! The project was a resounding success and we submitted it for an A, but we wanted to keep making it better. We eventually turned it into a site where anybody can create their own whiteboards with special permissions on them for their friends.</p>
-                <p>This project is now dead because the servers with our data on them have since been wiped and given to another class, but I am now rebuilding it in a 
+				<p>Whiteboard With Firends is a web app I started development on with my roommate at the time when I was first learning web development. This is a social networking site in which users create their own "whiteboards" where friends of theirs can draw on them and collaborate in making art with each other.</p>
+				<p>We started this as a school project using AngularJS and a PHP backend but once the class was over the school-provided servers were wiped clean. After learning a bit more about full stack development, I resurrected it and have been working alone on it, using python Flaskr framework in collaboration with Heroku for deployment purposes in a new repo: 
 					<a href="https://github.com/jsogard/whiteboard-with-friends-py">
-						new repository
+						Whiteboard With Friends 2
 						<i class="fa fa-code-fork" aria-hidden="true"></i>
-					</a> 
-					as a solo effort using Python Flaskr.
+					</a>
+					.
                 </p>
             </div>
             
@@ -82,7 +96,8 @@
                     <h3>Personal/Professional Website</h3>
                     <i class="fa fa-code-fork" aria-hidden="true"></i>
                 </a>
-                <p>Before my last job application season while in college I figured I needed a website that was more professional and representative of my abilities than the one I made while first learning what HTML was. I spent the end of my final summer developing this website so I could show it off to any potential employers. Coincidentally, I took a portfolio development class the very next semester which required me to do exactly that!</p>
+				<p>In order to show off my incredible web development skills, my side projects, and me to friends and employers alike, I needed a website.</p>
+				<p>In order to improve my UI skills I made this site entirely from scratch without any templates or frameworks, jsut pure HTML, CSS, and jQuery. Since jsut a normal website was too simple, I then made a rotating collage of pictures of me and my friends and family to show off my personality and what's important to me.</p>
             </div>
             
             <div class="portfolio-project">
@@ -90,13 +105,48 @@
                     <h3>Meal Management App</h3>
 					<i class="fa fa-code-fork" aria-hidden="true"></i>
                 </a>
-                <p>During my Senior year of college I started my first ever mobile development class. At the same time I had my first semester at school where I had absolutely no meal plan. After a few poorly planned grocery trips I was inspired to make an app to track how much I was spending on my food and how much I was spending on each meal. I know there are so many apps out there that have already made this, but I saw this as a simple enough first app to develop that could help me in my daily life, so I took the challenge and went with it!</p>
+                <p>During my Senior year of college I started my first ever mobile development class. At the same time I had to start the first semester of school in which I had absolutely no meal plan. After a few poorly planned grocery trips I was inspired to make an app to track how much I was spending on my food and how much I was spending on each meal. Instead of just downloading some ad-ridden app off the app store, I took this as a challenge to make my first ever mobile app.</p>
             </div>
         </div>
         <div class="pane-break"></div>
         
 		<!-- JOB EXPERIENCE -->
         <div class="content" id="experience">
+			
+			<div class="job">
+                <div class='job-about'>
+                    <div class='job-stats'>
+                        <h3 class='title'>Software Engineer</h3>
+                        <h4 class='company'>Innovative Software Engineering</h4>
+                        <p class='timespan'>May 2018 - Present</p>
+                    </div>
+                    <div class='job-logo-div'>
+                        <img src="/img/ise.png" class='logo' style="height:90px;">
+                    </div>
+                </div>
+                <div class='desc'>
+                    <p>Software Engineer working on scrum team using Agile methodologies and development practices. Worked on development, QA, testing, and participated in agile scrum rituals such as backlog grooming and refinement and sprint planning. Regularly worked with feedback from code reviews and provided code review feedback to others on team.</p>
+					<p>Converted major web project from a SOAP API to a RESTful API and created corresponding automated testing suite with manual test cases. </p>
+					<p>Helped lead an internal Automated Testing Initiative which pushed the entire company towards more and higher quality automated testing and general testing strategies such as TDD and BDD.</p>
+                </div>
+            </div>
+			
+			<div class="job">
+                <div class='job-about'>
+                    <div class='job-stats'>
+                        <h3 class='title'>Boy Scout Troop Leader</h3>
+                        <h4 class='company'>Boy Scouts of America</h4>
+                        <p class='timespan'>August 2017 - May 2018</p>
+                    </div>
+                    <div class='job-logo-div'>
+                        <img src="/img/bsa.png" class='logo' style="height:90px;">
+                    </div>
+                </div>
+                <div class='desc'>
+					<p>Met every day of the week with a different boy scout troop around the Ames area, working it in with my class schedule. Planned daily meetings with my two other Eagle Scouts to progress elementary schoolers through the ranks of scouting. Coordinated these learning opportunities with the local elementary schools and local BSA organizers</p>
+                </div>
+            </div>
+			
             <div class="job bglogo" style="background-image: url(img/pfg_opac.png)">
                 <div class='job-about'>
                     <div class='job-stats'>
@@ -114,6 +164,7 @@
                     <p>Fully developed the back-end of an enterprise-wide web app that tracks the registration and various corporate restrictions of individuals for any manner of company events.</p>
                 </div>
             </div>
+			
             <div class="job bglogo" style="background-image: url(img/xpanxion_opac.png)">
                 <div class='job-about'>
                     <div class='job-stats'>
@@ -130,6 +181,7 @@
 					<p>Took on responsibilities of otherwise indisposed coworkers to improve the efficiency of automated test creation. Dynamically changed automated test formats to adapt to new requirements.</p>
                 </div>
             </div>
+			
             <div class="job bglogo" style="background-image: url(img/optum_opac_small.png)">
                 <div class='job-about'>
                     <div class='job-stats'>
@@ -146,6 +198,7 @@
 					<p>Created technological idea with team of interns for a solution to reaching out to the public more by creating an interactive website demo. Pitched this idea to business and technology executives.</p>
                 </div>
             </div>
+			
             <div class="job bglogo" style="background-image: url(img/isu_opac.png)">
                 <div class='job-about'>
                     <div class='job-stats'>
