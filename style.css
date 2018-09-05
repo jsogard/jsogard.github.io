@@ -1,24 +1,29 @@
 body {
     width: 100%;
     margin: 0;
-	background-color: #eeeeee;
+	background-image: url(img/patterns/leaves.png);
+	color: #3B3B36;
+}
+
+a {
+	text-decoration: none;
 }
 
 #background {
     width: 100%;
-    background-color: auto;
+    background-image: auto;
     padding-bottom: 100px;
 }
 
 #nav-bar {
 	z-index: 100;
     width: 80%;
-    box-shadow: -2px 0 7px #bbbbbb, 2px 0 7px #bbbbbb;
+    box-shadow: -2px 0 7px #B0B3A3, 2px 0 7px #B0B3A3;
     position: fixed;
     top: 0;
     left: 10%;
     height: 60px;
-    background: linear-gradient(#ffffff, #efefef);
+    background: linear-gradient(#FAFBF6	, #F5F6EC);
     letter-spacing: 3px;
     
 }
@@ -35,7 +40,7 @@ body {
 }
 
 #nav-bar td a:active {
-    background: linear-gradient(#f8f8f8, #efefef);
+    background: linear-gradient(#FAFBF6, #EBEED9);
 }
 
 #nav-bar td a {
@@ -43,15 +48,15 @@ body {
     height: 100%;
     text-decoration: none;
     padding-top: 10px;
-    color: #888888;
+    color: #B0B3A3;
     margin-top: 5px;
 }
 
 #collage {
 	position: relative;
-	border: solid 2.5px #666666;
+	border: solid 2.5px #939588;
     margin: 60px auto -20px auto;
-	background-color: #666666;
+	background-color: #939588;
 }
 
 .collage-pic{
@@ -69,8 +74,8 @@ body {
 #content-strip {
     width: 70%;
 	margin: 0 15% 0 15%;
-    background: linear-gradient(to right, #ffffff, #eeeeee, #ffffff);
-    box-shadow: 10px 0 20px #bbbbbb, -10px 0 20px #bbbbbb;
+    background: linear-gradient(to right, #FCFDFA, #F7F9F1, #FCFDFA);
+    box-shadow: 10px 0 20px #B0B3A3, -10px 0 20px #B0B3A3;
 }
 
 h2, h1, h3, h4, h5 {
@@ -89,7 +94,7 @@ p {
 }
 
 .pane-break {
-	background: linear-gradient(to right, rgba(255,0,0,0), #777777, rgba(255,0,0,0));
+	background: linear-gradient(to right, rgba(255,0,0,0), #939588, rgba(255,0,0,0));
     height: 1px;
     width: 60%;
     margin: 15px 20% 15px 20%;
@@ -153,7 +158,7 @@ p {
 }
 
 #portfolio .portfolio-project > a i{
-	color: #666666;
+	color: #B0B3A3;
 }
 
 .bglogo{
